@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/smallcards"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/smallbackground"
+        android:orientation="vertical"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:id="@+id/cards1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/cards1"></ImageView>
+
+        <ImageView
+            android:id="@+id/cards2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/cards2"></ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_30_stones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30原石"
+            android:layout_alignParentRight="true"
+            ></Button>
+
+        <ImageView
+            android:id="@+id/bigcards"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cards1"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bigcards"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/onechou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单抽" />
+
+            <Button
+                android:id="@+id/tenchou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10连抽"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
